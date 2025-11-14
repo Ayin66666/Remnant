@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Buff_Base : MonoBehaviour
+public abstract class Buff_Data : MonoBehaviour
 {
     [Header("---Status---")]
-    public ButtType buffType;
+    public BuffType buttType;
+    public NormalBuff normalType;
+    public KeywordBuff keywordType;
     public int buffTime;
     public int buffPower;
-
-    public enum ButtType { Buff, DeBuff }
 }

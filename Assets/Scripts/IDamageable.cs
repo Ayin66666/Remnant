@@ -2,7 +2,22 @@
 
 public interface IDamageable
 {
-    public void TakeDamage(HitEffect effect, bool isCritical, int damage);
+    /// <summary>
+    /// 일반 데미지
+    /// </summary>
+    /// <param name="isCritical"></param>
+    /// <param name="damage"></param>
+    public void TakeDamage(bool isCritical, int damage);
+
+    /// <summary>
+    /// 키워드 적용
+    /// </summary>
+    /// <param name="buff"></param>
+    /// <param name="time"></param>
+    /// <param name="power"></param>
+    public void Keyword(KeywordBuff buff, int time, int power);
+
+    public void Normal();
 
     public void Groggy();
 

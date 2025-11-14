@@ -55,7 +55,7 @@ public abstract class Character_Base : MonoBehaviour, IDamageable
     {
     }
 
-    public void TakeDamage(HitEffect effect, bool isCritical, int damage)
+    public void TakeDamage(bool isCritical, int damage)
     {
         // 데미지 계산
         float criticalValue = isCritical ? 1.2f : 1f;
@@ -75,6 +75,16 @@ public abstract class Character_Base : MonoBehaviour, IDamageable
     }
 
     public void Die()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Keyword(KeywordBuff buff, int time, int power)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Normal()
     {
         throw new System.NotImplementedException();
     }
