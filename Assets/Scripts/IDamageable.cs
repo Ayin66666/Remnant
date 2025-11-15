@@ -15,9 +15,7 @@ public interface IDamageable
     /// <param name="buff"></param>
     /// <param name="time"></param>
     /// <param name="power"></param>
-    public void Keyword(KeywordBuff buff, int time, int power);
-
-    public void Normal();
+    public void AddKeyword(KeywordBuff buff, int time, int power);
 
     public void Groggy();
 

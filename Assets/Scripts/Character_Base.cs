@@ -81,7 +81,7 @@ public abstract class Character_Base : MonoBehaviour, IDamageable
 
     public void Keyword(KeywordBuff buff, int time, int power)
     {
-        throw new System.NotImplementedException();
+
     }
 
     public void Normal()
