@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -9,6 +10,16 @@ public abstract class Buff_Base : MonoBehaviour
     public KeywordBuff keywordType;
     public int buffTime;
     public int buffPower;
+
+
+    /// <summary>
+    /// TData 는 무조건 Enum 타입만 사용함! -> 키워드의 세부 특성 Enum 값임!
+    /// </summary>
+    /// <typeparam name="TData"></typeparam>
+    /// <param name="keyword"></param>
+    /// <param name="subType"></param>
+    /// <param name="data"></param>
+    public abstract void Use<SubKeyword>(KeywordBuff mKeyword, int mPower, SubKeyword subKeyword, int sPower) where SubKeyword : Enum;
 }
 
 /*
